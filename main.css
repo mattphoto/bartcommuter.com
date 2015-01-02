@@ -1,0 +1,116 @@
+/*
+
+Material Colors
+
+deep purple #673ab7
+indigo #3f51b5
+blue  #5677fc
+lightblue #03a9f4
+cyan #00BCD4
+teal #009688
+green #259b24
+yellow #ffeb3b
+amber #ffc107
+orange #ff9800
+deep arange #ff6e40
+red #e51c23
+
+// some edge cases to ask bart:
+// what is the fewest number of cars per train
+
+
+
+// 10:          - deep purple
+// 10-9:           - indigo
+// 9-8: too early - blue
+// 8-7:           - lightblue
+// 7-6: leave soon - green
+// 6-5:            - amber
+// 5-4: too late  - deep orange
+
+*/
+
+
+
+html { 
+  -webkit-font-smoothing: antialiased; 
+  text-shadow: 1px 1px 1px rgba(0.0.0.0.004) ;
+}
+
+body {
+ font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; 
+ margin: 0;
+ background-color: silver;
+ font-size: 1em;
+ text-align: center;
+}
+
+.train-direction {
+  width: 100%;
+  font-weight: 100;
+  font-size: 6vmin;
+  background-color: silver;
+  color: white;
+  padding: 8vw 0 0 0vw;
+}
+
+.current-etd {
+  width: 100vw;
+  height: 100vw;
+  margin: -8vw 0 -8vw 0 ;
+  background-color: silver;
+  font-weight: 100;
+  font-size: 80vw;
+  color: white;
+  letter-spacing: -5vw;
+}
+
+.current-etd-text {
+  width: 100%;
+  height: 40px;
+  line-height: 90%;
+  padding: 0 0 6vw 0;
+  font-weight: 100;
+  font-size: 6vw;
+  background-color: silver;
+  color: white;
+}
+
+.future-etd {
+  width: 100%;
+  text-align: left;
+  font-weight: 100;
+  font-size: 5vmin;
+  background-color: silver;
+  padding: 1vw 0 2vw 6vw;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.past-etd {
+  width: 100%;
+  text-align: left;
+  font-weight: 100;
+  font-size: 5vmin;
+  background-color: silver;
+  padding: 1vw 0 2vw 6vw;
+  color: white;
+  border-top: 1px solid white;
+}
+.future-etd-container {
+  padding: 0
+}
+
+.bullet {
+  font-size: 12vmin;
+  line-height: 6vmin;
+}
+
+
+/* Stop */
+.stop {
+    width: 16px;
+    height: 16px;
+    margin: 8px 0 0 8px;
+    background: #333;
+}

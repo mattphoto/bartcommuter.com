@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>BART Commuter</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" type='text/css' href="main.css">
+</head>
+
+<body>
+
+  <div class='container'>
+    <div class='past-etd-container'></div>
+    <div class='train-direction'></div>
+    <div class='current-etd'>...</div>
+    <div class='current-etd-text'></div>
+    <div class='future-etd-container'></div>
+  </div>
+
+  <!-- javascript -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="etd.js"></script>
+  <script>
+    $(document).ready(function() {
+      console.log('getReady');
+      getTrainDirection();
+      var intervalID = window.setInterval(getTrainDirection, 15000);
+    });
+  </script>
+</body>
+
+</html>
