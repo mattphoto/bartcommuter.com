@@ -46,6 +46,9 @@ encode options to one character
 
 */
 
+$(function() {
+
+
 var stations = {
   '12TH': '12th St. / Oakland City Center',
   '16TH': '16th St. Mission',
@@ -258,3 +261,10 @@ var getCurrentTrainIndex = function(trains, tooLate) {
   }
   return trainIndex;
 }
+
+
+getTrainDirection();
+var intervalID = window.setInterval(getTrainDirection, 15000);
+
+});
+
