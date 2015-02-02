@@ -1,6 +1,10 @@
 
 // TODO
 // REFACTOR!
+
+
+// NICE TO HAVES
+// display: inline-block for train color
 // service advisory api
 // pass a config object to functions
 // cache dom selectors
