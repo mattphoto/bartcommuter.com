@@ -140,14 +140,14 @@ var stations = {
 var getTrainDirection = function() {
   $.ajax({ 
     type:'GET', 
-    url:'http://api.bart.gov/api/sched.aspx?cmd=depart&orig=' + origin + '&dest=' + destination + '&date=now&b=2&a=4', 
+    url:'http://api.bart.gov/api/sched.aspx?cmd=depart&orig=' + origin + '&dest=' + destination + '&date=now&b=2&a=4' + '&key=Z5LP-U799-IDSQ-DT35', 
     dataType:'xml', 
     success: function(xml){ 
       var trainHeadings = [];
       $(xml).find('leg').each(function(){
         trainHeadings.push($(this).attr('trainHeadStation'));
       });
-      console.log(trainHeadings);
+      // console.log('trainheadings: ', trainHeadings);
       getTrains(trainHeadings);
     }
   });
@@ -189,7 +189,7 @@ var getTrains = function(trainHeadings) {
         else if (a[2] > b[2]) return 1
         return 0;
       });
-      console.log(trains);
+      // console.log('trains: ', trains);
       updateDisplay(trains);
     }
   });

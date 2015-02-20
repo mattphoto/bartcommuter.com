@@ -9,13 +9,117 @@
 
 <body>
 
-  <div class='container'>
-    <div class='past-etd-container'></div>
-    <div class='train-direction'>configure</div>
-    <div class='current-etd'></div>
-    <div class='current-etd-text'></div>
-    <div class='future-etd-container'></div>
-  </div>
+  <form action="index.html" method="post">
+    <h1>Create a personalized link</h1>
+    <label for="home_station">Home:</label>
+    <select id="home_station" name="home_station">
+      <option value="" selected="selected">Choose home BART station</option>
+      <option value="12TH">12th St. Oakland City Center</option>
+      <option value="16TH">16th St. Mission (SF)</option>
+      <option value="19TH">19th St. Oakland</option>
+      <option value="24TH">24th St. Mission (SF)</option>
+      <option value="ASHB">Ashby (Berkeley)</option>
+      <option value="BALB">Balboa Park (SF)</option>
+      <option value="BAYF">Bay Fair (San Leandro)</option>
+      <option value="CAST">Castro Valley</option>
+      <option value="CIVC">Civic Center/UN Plaza (SF)</option>
+      <option value="COLS">Coliseum</option>
+      <option value="COLM">Colma</option>
+      <option value="CONC">Concord</option>
+      <option value="DALY">Daly City</option>
+      <option value="DBRK">Downtown Berkeley</option>
+      <option value="DUBL">Dublin/Pleasanton</option>
+      <option value="DELN">El Cerrito del Norte</option>
+      <option value="PLZA">El Cerrito Plaza</option>
+      <option value="EMBR">Embarcadero (SF)</option>
+      <option value="FRMT">Fremont</option>
+      <option value="FTVL">Fruitvale (Oakland)</option>
+      <option value="GLEN">Glen Park (SF)</option>
+      <option value="HAYW">Hayward</option>
+      <option value="LAFY">Lafayette</option>
+      <option value="LAKE">Lake Merritt (Oakland)</option>
+      <option value="MCAR">MacArthur (Oakland)</option>
+      <option value="MLBR">Millbrae</option>
+      <option value="MONT">Montgomery St. (SF)</option>
+      <option value="NBRK">North Berkeley</option>
+      <option value="NCON">North Concord/Martinez</option>
+      <option value="OAKL">Oakland Int&#039;l Airport</option>
+      <option value="ORIN">Orinda</option>
+      <option value="PITT">Pittsburg/Bay Point</option>
+      <option value="PHIL">Pleasant Hill/Contra Costa Centre</option>
+      <option value="POWL">Powell St. (SF)</option>
+      <option value="RICH">Richmond</option>
+      <option value="ROCK">Rockridge (Oakland)</option>
+      <option value="SBRN">San Bruno</option>
+      <option value="SFIA">San Francisco Int&#039;l Airport</option>
+      <option value="SANL">San Leandro</option>
+      <option value="SHAY">South Hayward</option>
+      <option value="SSAN">South San Francisco</option>
+      <option value="UCTY">Union City</option>
+      <option value="WCRK">Walnut Creek</option>
+      <option value="WDUB">West Dublin/Pleasanton</option>
+      <option value="WOAK">West Oakland</option>
+    </select>
+    <br />
+    <label for="work_station">Work:</label>
+    <select id="work_station" name="work_station">
+      <option value="" selected="selected">Choose work BART station</option>
+      <option value="12TH">12th St. Oakland City Center</option>
+      <option value="16TH">16th St. Mission (SF)</option>
+      <option value="19TH">19th St. Oakland</option>
+      <option value="24TH">24th St. Mission (SF)</option>
+      <option value="ASHB">Ashby (Berkeley)</option>
+      <option value="BALB">Balboa Park (SF)</option>
+      <option value="BAYF">Bay Fair (San Leandro)</option>
+      <option value="CAST">Castro Valley</option>
+      <option value="CIVC">Civic Center/UN Plaza (SF)</option>
+      <option value="COLS">Coliseum</option>
+      <option value="COLM">Colma</option>
+      <option value="CONC">Concord</option>
+      <option value="DALY">Daly City</option>
+      <option value="DBRK">Downtown Berkeley</option>
+      <option value="DUBL">Dublin/Pleasanton</option>
+      <option value="DELN">El Cerrito del Norte</option>
+      <option value="PLZA">El Cerrito Plaza</option>
+      <option value="EMBR">Embarcadero (SF)</option>
+      <option value="FRMT">Fremont</option>
+      <option value="FTVL">Fruitvale (Oakland)</option>
+      <option value="GLEN">Glen Park (SF)</option>
+      <option value="HAYW">Hayward</option>
+      <option value="LAFY">Lafayette</option>
+      <option value="LAKE">Lake Merritt (Oakland)</option>
+      <option value="MCAR">MacArthur (Oakland)</option>
+      <option value="MLBR">Millbrae</option>
+      <option value="MONT">Montgomery St. (SF)</option>
+      <option value="NBRK">North Berkeley</option>
+      <option value="NCON">North Concord/Martinez</option>
+      <option value="OAKL">Oakland Int&#039;l Airport</option>
+      <option value="ORIN">Orinda</option>
+      <option value="PITT">Pittsburg/Bay Point</option>
+      <option value="PHIL">Pleasant Hill/Contra Costa Centre</option>
+      <option value="POWL">Powell St. (SF)</option>
+      <option value="RICH">Richmond</option>
+      <option value="ROCK">Rockridge (Oakland)</option>
+      <option value="SBRN">San Bruno</option>
+      <option value="SFIA">San Francisco Int&#039;l Airport</option>
+      <option value="SANL">San Leandro</option>
+      <option value="SHAY">South Hayward</option>
+      <option value="SSAN">South San Francisco</option>
+      <option value="UCTY">Union City</option>
+      <option value="WCRK">Walnut Creek</option>
+      <option value="WDUB">West Dublin/Pleasanton</option>
+      <option value="WOAK">West Oakland</option>
+    </select>
+    <br />
+
+    <button type="submit">Make the link!</button>
+  </form>
+
+  <ol>
+    <li>click the link</li>
+    <li>save to home page</li>
+
+  </ol>
 
   <!-- javascript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -31,3 +135,246 @@
 </body>
 
 </html>
+
+
+<!-- <form action="/" method="post" id="bart-quickplanner-form" accept-charset="UTF-8">
+    <div class="mapwrapper"><a href="/" class="toggle" fragment="bart_map">BART Map</a>
+        <div class="toggletarget" style="display:none;"><a href="/" class="close">Close</a><img src="/sites/all/themes/bart_desktop/img/system-map.gif" alt="BART Map" title="BART Map">
+        </div>
+    </div>
+    <fieldset class="form-wrapper" id="edit-from-location">
+        <legend><span class="fieldset-legend">Departing from?</span>
+        </legend>
+        <div class="fieldset-wrapper">
+            <div class="container-inline">
+                <div id="edit-from-type" class="form-radios">
+                    <div class="form-item form-type-radio form-item-from-type">
+                        <input type="radio" id="edit-from-type-station" name="from_type" value="station" checked="checked" class="form-radio" />
+                        <label class="option" for="edit-from-type-station">Station </label>
+
+                    </div>
+                    <div class="form-item form-type-radio form-item-from-type">
+                        <input type="radio" id="edit-from-type-address" name="from_type" value="address" class="form-radio" />
+                        <label class="option" for="edit-from-type-address">Address </label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-item form-type-select form-item-from-station">
+                <label class="element-invisible" for="edit-from-station">Choose departing station </label>
+                <select id="edit-from-station" name="from_station" class="form-select">
+                    <option value="">Departing from?</option>
+                    <option value="closest">Find closest</option>
+                    <option value="12TH">12th St. Oakland City Center</option>
+                    <option value="16TH">16th St. Mission (SF)</option>
+                    <option value="19TH">19th St. Oakland</option>
+                    <option value="24TH">24th St. Mission (SF)</option>
+                    <option value="ASHB">Ashby (Berkeley)</option>
+                    <option value="BALB">Balboa Park (SF)</option>
+                    <option value="BAYF">Bay Fair (San Leandro)</option>
+                    <option value="CAST">Castro Valley</option>
+                    <option value="CIVC">Civic Center/UN Plaza (SF)</option>
+                    <option value="COLS">Coliseum</option>
+                    <option value="COLM">Colma</option>
+                    <option value="CONC">Concord</option>
+                    <option value="DALY">Daly City</option>
+                    <option value="DBRK">Downtown Berkeley</option>
+                    <option value="DUBL" selected="selected">Dublin/Pleasanton</option>
+                    <option value="DELN">El Cerrito del Norte</option>
+                    <option value="PLZA">El Cerrito Plaza</option>
+                    <option value="EMBR">Embarcadero (SF)</option>
+                    <option value="FRMT">Fremont</option>
+                    <option value="FTVL">Fruitvale (Oakland)</option>
+                    <option value="GLEN">Glen Park (SF)</option>
+                    <option value="HAYW">Hayward</option>
+                    <option value="LAFY">Lafayette</option>
+                    <option value="LAKE">Lake Merritt (Oakland)</option>
+                    <option value="MCAR">MacArthur (Oakland)</option>
+                    <option value="MLBR">Millbrae</option>
+                    <option value="MONT">Montgomery St. (SF)</option>
+                    <option value="NBRK">North Berkeley</option>
+                    <option value="NCON">North Concord/Martinez</option>
+                    <option value="OAKL">Oakland Int&#039;l Airport</option>
+                    <option value="ORIN">Orinda</option>
+                    <option value="PITT">Pittsburg/Bay Point</option>
+                    <option value="PHIL">Pleasant Hill/Contra Costa Centre</option>
+                    <option value="POWL">Powell St. (SF)</option>
+                    <option value="RICH">Richmond</option>
+                    <option value="ROCK">Rockridge (Oakland)</option>
+                    <option value="SBRN">San Bruno</option>
+                    <option value="SFIA">San Francisco Int&#039;l Airport</option>
+                    <option value="SANL">San Leandro</option>
+                    <option value="SHAY">South Hayward</option>
+                    <option value="SSAN">South San Francisco</option>
+                    <option value="UCTY">Union City</option>
+                    <option value="WCRK">Walnut Creek</option>
+                    <option value="WDUB">West Dublin/Pleasanton</option>
+                    <option value="WOAK">West Oakland</option>
+                </select>
+            </div>
+            <div class="form-item form-type-textfield form-item-from-address">
+                <label class="element-invisible" for="edit-from-address">Enter departing address </label>
+                <input type="text" id="edit-from-address" name="from_address" value="" size="30" maxlength="128" class="form-text" />
+            </div>
+        </div>
+    </fieldset>
+    <fieldset class="form-wrapper" id="edit-to-location">
+        <legend><span class="fieldset-legend">Arriving at?</span>
+        </legend>
+        <div class="fieldset-wrapper">
+            <div class="container-inline">
+                <div id="edit-to-type" class="form-radios">
+                    <div class="form-item form-type-radio form-item-to-type">
+                        <input type="radio" id="edit-to-type-station" name="to_type" value="station" checked="checked" class="form-radio" />
+                        <label class="option" for="edit-to-type-station">Station </label>
+
+                    </div>
+                    <div class="form-item form-type-radio form-item-to-type">
+                        <input type="radio" id="edit-to-type-address" name="to_type" value="address" class="form-radio" />
+                        <label class="option" for="edit-to-type-address">Address </label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-item form-type-select form-item-to-station">
+                <label class="element-invisible" for="edit-to-station">Choose arrival station </label>
+                <select id="edit-to-station" name="to_station" class="form-select">
+                    <option value="">Arriving at?</option>
+                    <option value="closest">Find closest</option>
+                    <option value="12TH">12th St. Oakland City Center</option>
+                    <option value="16TH">16th St. Mission (SF)</option>
+                    <option value="19TH">19th St. Oakland</option>
+                    <option value="24TH">24th St. Mission (SF)</option>
+                    <option value="ASHB">Ashby (Berkeley)</option>
+                    <option value="BALB">Balboa Park (SF)</option>
+                    <option value="BAYF">Bay Fair (San Leandro)</option>
+                    <option value="CAST">Castro Valley</option>
+                    <option value="CIVC">Civic Center/UN Plaza (SF)</option>
+                    <option value="COLS">Coliseum</option>
+                    <option value="COLM">Colma</option>
+                    <option value="CONC">Concord</option>
+                    <option value="DALY">Daly City</option>
+                    <option value="DBRK">Downtown Berkeley</option>
+                    <option value="DUBL">Dublin/Pleasanton</option>
+                    <option value="DELN">El Cerrito del Norte</option>
+                    <option value="PLZA">El Cerrito Plaza</option>
+                    <option value="EMBR">Embarcadero (SF)</option>
+                    <option value="FRMT">Fremont</option>
+                    <option value="FTVL">Fruitvale (Oakland)</option>
+                    <option value="GLEN">Glen Park (SF)</option>
+                    <option value="HAYW">Hayward</option>
+                    <option value="LAFY">Lafayette</option>
+                    <option value="LAKE">Lake Merritt (Oakland)</option>
+                    <option value="MCAR">MacArthur (Oakland)</option>
+                    <option value="MLBR">Millbrae</option>
+                    <option value="MONT">Montgomery St. (SF)</option>
+                    <option value="NBRK">North Berkeley</option>
+                    <option value="NCON">North Concord/Martinez</option>
+                    <option value="OAKL">Oakland Int&#039;l Airport</option>
+                    <option value="ORIN">Orinda</option>
+                    <option value="PITT">Pittsburg/Bay Point</option>
+                    <option value="PHIL">Pleasant Hill/Contra Costa Centre</option>
+                    <option value="POWL">Powell St. (SF)</option>
+                    <option value="RICH">Richmond</option>
+                    <option value="ROCK">Rockridge (Oakland)</option>
+                    <option value="SBRN">San Bruno</option>
+                    <option value="SFIA" selected="selected">San Francisco Int&#039;l Airport</option>
+                    <option value="SANL">San Leandro</option>
+                    <option value="SHAY">South Hayward</option>
+                    <option value="SSAN">South San Francisco</option>
+                    <option value="UCTY">Union City</option>
+                    <option value="WCRK">Walnut Creek</option>
+                    <option value="WDUB">West Dublin/Pleasanton</option>
+                    <option value="WOAK">West Oakland</option>
+                </select>
+            </div>
+            <div class="form-item form-type-textfield form-item-to-address">
+                <label class="element-invisible" for="edit-to-address">Enter arrival address </label>
+                <input type="text" id="edit-to-address" name="to_address" value="" size="30" maxlength="128" class="form-text" />
+            </div>
+        </div>
+    </fieldset>
+    <div class="container-inline">
+        <div id="edit-time-type" class="form-radios">
+            <div class="form-item form-type-radio form-item-time-type">
+                <input type="radio" id="edit-time-type-departure" name="time_type" value="departure" checked="checked" class="form-radio" />
+                <label class="option" for="edit-time-type-departure">Departing around </label>
+
+            </div>
+            <div class="form-item form-type-radio form-item-time-type">
+                <input type="radio" id="edit-time-type-arrival" name="time_type" value="arrival" class="form-radio" />
+                <label class="option" for="edit-time-type-arrival">Arriving around </label>
+
+            </div>
+        </div>
+    </div>
+    <fieldset class="form-wrapper" id="edit-date">
+        <legend><span class="fieldset-legend">Trip date</span>
+        </legend>
+        <div class="fieldset-wrapper">
+            <div class="container-inline-date">
+                <div class="form-item form-type-date-popup form-item-date-select">
+                    <div id="date-popup" class="date-padding">
+                        <div class="form-item form-type-textfield form-item-date-select-date">
+                            <label for="date-popup-datepicker-popup-0">Date </label>
+                            <input type="text" id="date-popup-datepicker-popup-0" name="date_select[date]" value="" size="30" maxlength="30" class="form-text" />
+
+                            <div class="description"> E.g., 02/6/2015</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item form-type-select form-item-date-time">
+                <label class="element-invisible" for="edit-date-time">Choose Travel Time </label>
+                <select id="edit-date-time" name="date_time" class="form-select">
+                    <option value="now" selected="selected">now</option>
+                    <option value="4:00 am">4:00 am</option>
+                    <option value="4:30 am">4:30 am</option>
+                    <option value="5:00 am">5:00 am</option>
+                    <option value="5:30 am">5:30 am</option>
+                    <option value="6:00 am">6:00 am</option>
+                    <option value="6:30 am">6:30 am</option>
+                    <option value="7:00 am">7:00 am</option>
+                    <option value="7:30 am">7:30 am</option>
+                    <option value="8:00 am">8:00 am</option>
+                    <option value="8:30 am">8:30 am</option>
+                    <option value="9:00 am">9:00 am</option>
+                    <option value="9:30 am">9:30 am</option>
+                    <option value="10:00 am">10:00 am</option>
+                    <option value="10:30 am">10:30 am</option>
+                    <option value="11:00 am">11:00 am</option>
+                    <option value="11:30 am">11:30 am</option>
+                    <option value="12:00 pm">12:00 pm</option>
+                    <option value="12:30 pm">12:30 pm</option>
+                    <option value="1:00 pm">1:00 pm</option>
+                    <option value="1:30 pm">1:30 pm</option>
+                    <option value="2:00 pm">2:00 pm</option>
+                    <option value="2:30 pm">2:30 pm</option>
+                    <option value="3:00 pm">3:00 pm</option>
+                    <option value="3:30 pm">3:30 pm</option>
+                    <option value="4:00 pm">4:00 pm</option>
+                    <option value="4:30 pm">4:30 pm</option>
+                    <option value="5:00 pm">5:00 pm</option>
+                    <option value="5:30 pm">5:30 pm</option>
+                    <option value="6:00 pm">6:00 pm</option>
+                    <option value="6:30 pm">6:30 pm</option>
+                    <option value="7:00 pm">7:00 pm</option>
+                    <option value="7:30 pm">7:30 pm</option>
+                    <option value="8:00 pm">8:00 pm</option>
+                    <option value="8:30 pm">8:30 pm</option>
+                    <option value="9:00 pm">9:00 pm</option>
+                    <option value="9:30 pm">9:30 pm</option>
+                    <option value="10:00 pm">10:00 pm</option>
+                    <option value="10:30 pm">10:30 pm</option>
+                    <option value="11:00 pm">11:00 pm</option>
+                    <option value="11:30 pm">11:30 pm</option>
+                    <option value="12:00 am">12:00 am</option>
+                    <option value="12:30 am">12:30 am</option>
+                </select>
+            </div>
+        </div>
+    </fieldset>
+    <input type="submit" id="edit-get-schedule" name="op" value="Get Schedule" class="form-submit" />
+    <input type="hidden" name="form_build_id" value="form-egM6IrA8MpTMgU9S7ppk7zi-tKJ1NZ1aFjqMOgiSViY" />
+    <input type="hidden" name="form_id" value="bart_quickplanner_form" />
+  </form> -->
